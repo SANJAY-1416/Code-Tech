@@ -10,20 +10,113 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 80px;
+  align-items: center;
+  padding: 0 0 0 20px;
 }
 .nav-flex {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 .parent-logo {
   flex-shrink: 0;
 }
 
-.logo {
+.nav-logo a {
+  text-decoration: none;
   color: white;
 }
 .Home {
-  overflow: hidden;
-  display: block;
+  /* overflow: hidden; */
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.Home1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.Home1 a {
+  /* display: flex; */
+  text-decoration: none;
+  color: white;
+}
+.Home1 a:hover {
+  border: 1px solid white;
+  padding: 10px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+}
+.pages {
+  background-color: black;
+  padding: 10px;
+  margin: 5px;
+  margin-left: 0;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+.links a:hover {
+  border: 1px solid white;
+  background: white;
+  color: black;
+  border-radius: 10px;
+}
+.button {
+  display: none;
+  background: none;
+}
+@media only screen and (max-width: 600px) {
+  .Home1 a {
+    display: none;
+  }
+  .button {
+    display: block;
+    /* border: none; */
+    background: none;
+  }
+  .button button {
+    background: none;
+    border: none;
+    color: white;
+  }
+  .button1 {
+    width: 45px;
+    height: 45px;
+  }
+  .links a:hover {
+    border: 1px solid white;
+    background: white;
+    color: black;
+    border-radius: 10px;
+  }
+  .pages {
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .links a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
 }
