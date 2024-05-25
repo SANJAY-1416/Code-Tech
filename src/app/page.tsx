@@ -1,10 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from "@/Components/Nav-Bar/nav";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <h1>Sanjay</h1>
-    </main>
-  );
+  return <Navbar />;
 }
